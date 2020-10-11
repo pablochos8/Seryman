@@ -1,0 +1,100 @@
+ header .header-top .top-izquierda{
+     justify-self: end;
+     padding-right: 10%;
+ }
+.section-head{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.section-main{
+    width: 80%;
+    margin-left: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "titulo titulo"
+                         "titulo titulo"
+                         "box1 box2"
+                         "box1 box2"
+                         "box3 box4"
+                         "box3 box4";
+}
+.section-main .title p{
+    padding-top: 1rem;
+}
+.section-main p{
+    padding: 0 2rem;
+}
+
+.section-main .title{
+    grid-area: titulo;
+}
+
+.section-main .box1{
+    grid-area: box1;
+}
+
+.section-main .box2{
+    grid-area: box2;
+}
+
+.section-main .box3{
+    grid-area: box3;
+}
+
+.section-main .box4{
+    grid-area: box4;
+}
+
+.section-empresas{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "empresa1 empresa2 empresa3 empresa4";
+}
+
+
+.section-equip .equip{
+    grid-template-areas: "equip equip"
+                         "head head"
+                         "text text";
+    padding-left: 0;
+    
+}
+
+.section-equip .equip p{
+    padding: 0 6rem;
+}
+
+.section-equip{
+    width: 100%;
+    padding: 1.5rem 5%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "title title"
+                         "equip1 equip2"
+                         "equip1 equip2" ;
+}
+
+.section-equip h1{
+    grid-area: title;
+    padding-bottom: 1rem;
+}
+
+.section-equip .equip1{
+    grid-area: equip1;
+}
+
+.section-equip .equip2{
+    grid-area: equip2;
+}
+
+footer .logo-footer{
+    justify-self: start;
+    padding-left:5rem ;
+    padding-bottom: 2rem;
+}
+
+footer .datos{
+    justify-self: end;
+}

@@ -1,0 +1,126 @@
+header .header-top{
+    justify-content: start;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+}
+header .header-top .top-derecha{
+    padding-left: 4rem;
+}
+ header .header-top .top-izquierda{
+     justify-self: center;
+     display: flex;
+     text-align: center;
+     font-size: 1.4rem;
+ }
+
+ header .header-top .top-izquierda a{
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+ header .header-top .top-izquierda a:hover{
+     text-decoration: underline;
+ }
+
+
+ header .img-derecha{
+    width:100%;
+    height: auto;
+    max-height: fit-content;
+}
+
+header .img-derecha img{
+    max-height: 52.2rem;
+    
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 2rem;
+    text-align: center;
+    list-style: none;
+}
+
+/* header nav ul{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    height: 2rem;
+    justify-items: center;
+    list-style: none;
+} */
+
+header nav div{
+    background-color: #5e81ac;
+    border-bottom: 5px solid #3d4a81;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+header nav div a:hover{
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+
+header nav div li{
+    padding: 1rem 0;
+}
+
+header nav div:nth-child(1){
+    background-color: rgb(32, 47, 66);
+}
+
+header nav div:nth-child(1) a{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.section-head{
+    padding-left: 0;
+    gap: 0.5rem;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:1fr 1fr ;
+}
+
+.section-head .item{
+    padding: 5rem;
+}
+
+.section-equip .equip{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    grid-template-areas: "equip head"
+                         "equip text"
+                         "equip text";
+}
+
+.section-equip .equip img{
+    grid-area: equip;
+}
+
+.section-equip .equip h2{
+    grid-area: head;
+}
+
+.section-equip .equip p{
+    grid-area: text;
+}
+
+footer{
+    grid-template-columns: 1fr 1fr  ;
+    grid-row: 1fr;
+}
+
+footer nav{
+    display: none;
+}
+
+
+

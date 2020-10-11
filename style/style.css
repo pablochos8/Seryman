@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: ¿;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'arial';
+}
+
+h1 , h2{
+    font-family: 'Quicksand';
+}
+p , pre ,a  {
+    font-family: 'Hind Madurai';
+}
+
+header{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header .header-top{
+    width:100%;
+    height:5rem;
+    background-color:#5e81ac;
+    display:grid;
+    justify-content:center;
+    box-shadow: 0 1px 10px 0 black;
+}
+
+header .header-top .top-derecha img{
+    width:5rem;
+}
+
+header .header-top .top-izquierda{
+    display: none;
+}
+
+header .img-derecha{
+    width:100%;
+    height:auto;
+}
+
+header .img-izquierda{
+    display:none;
+}
+
+header .img-derecha img{
+    width:100%;
+}
+
+header nav{
+    display: none;
+}
+
+
+
+.section-head-cont{
+    background-color:#f0f0f0;
+    height:auto;
+    padding:2rem 0;
+    
+}
+.section-head{
+    width:100%;
+    height:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,30rem);
+    gap:3rem;
+    padding-left:5%;
+}
+
+.section-head h2{
+    font-size:2rem;
+    padding-left:1rem;
+    margin-bottom:0.5rem
+}
+
+.section-head p{
+    font-size:1.6rem;
+    color: gray;
+}
+
+.section-main{
+    width:100%;
+    height:auto;
+    background-color:white;
+    display:grid;
+    grid-template-rows:repeat(6,auto);
+    gap:4rem;
+    padding-top:3rem;
+}
+.section-main .title h1{
+    text-align: center;
+}
+.section-main .box{
+    height:auto;
+    display:grid;
+    justify-items: center;
+    gap:2rem;
+}
+
+.section-main h1{
+    justify-self:center;
+    font-size:2.5rem;
+}
+
+.section-main p{
+    text-align: start;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding:0 4rem;
+}
+
+.section-main .box h2{
+    font-size:2.5rem;
+    text-align:center;
+}
+
+.section-main .box img{
+    width:90%;
+}
+
+.section-empresas{
+    padding-top:5rem;
+    width:100%;
+    height:auto;
+    display:grid;
+    justify-items:center;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 10rem);
+    grid-template-areas:"empresa1 empresa3"
+                        "empresa2 empresa4";
+}
+
+.section-empresas img{
+    width:10rem;
+}
+
+.section-empresas .empresa1{
+    grid-area: empresa1;
+    align-items: center;
+    display:flex;
+}
+
+.section-empresas .empresa2{
+    grid-area: empresa2;
+    display:flex;
+    align-items:center;
+}
+
+.section-empresas .empresa3{
+    grid-area: empresa3;
+    display:flex;
+    align-items:center;
+}
+
+.section-empresas .empresa4 img{
+    width:5rem;
+}
+
+.section-empresas .empresa4{
+    grid-area: empresa4;
+    display:flex;
+    align-items:center;
+}
+
+.section-equip{
+        width:100%;
+        height:auto;
+        background-color:#f0f0f0;
+        display:grid;
+        grid-template-rows:repeat(2,auto);
+        gap:4rem;
+        padding-top:3rem;
+        justify-items:center;
+}
+
+.section-equip h1{
+    font-size:2.2rem
+}
+
+.section-equip .equip{
+    display:grid;
+    justify-items:center;
+    gap:1rem;
+}
+
+.section-equip h2{
+    font-size:2rem;
+}
+
+.section-equip p{
+    font-size:1.6rem;
+    text-align:start;
+    padding: 0 2rem;
+    padding-bottom:2rem;
+}
+
+
+footer{
+    width:100%;
+    height:auto;
+    background-color:#5e81ac;
+    display:grid;
+    justify-items:center;
+    align-items:center;
+    padding-top:2rem;
+}
+
+footer nav{
+    width: 100%;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer li::after{
+    content: ' | ';
+    padding: 0 2rem;
+}
+
+footer li:last-child::after{
+    content: none;
+}
+
+footer a{
+    text-decoration: none;
+    margin: 0 1rem;
+    color: #000;
+}
+
+
+
+footer img{
+    margin-top: 1rem;
+    width:10rem;
+}
+
+footer .datos{
+    text-align:center;
+    padding: 0 2rem;
+}
+footer .datos pre{
+    font-size:1.4rem;
+}
+
+footer .datos h2{
+    font-size:2rem;
+    margin-bottom:1rem
+}
