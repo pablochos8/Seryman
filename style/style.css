@@ -224,7 +224,7 @@ footer ul{
 
 footer li::after{
     content: ' | ';
-    padding: 0 2rem;
+    padding: 0 0.2rem;
 }
 
 footer li:last-child::after{

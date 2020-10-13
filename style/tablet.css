@@ -65,7 +65,7 @@ header nav div a{
 
 header nav div a:hover{
     text-decoration: underline;
-    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 header nav div li{
